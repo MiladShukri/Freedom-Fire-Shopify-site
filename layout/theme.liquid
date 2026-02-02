@@ -65,28 +65,5 @@
     {% if settings.quick_add or settings.mobile_quick_add %}
       {% render 'quick-add-modal' %}
     {% endif %}
-    <!-- Flame Cursor -->
-    {% comment %} <div id="flame-cursor">
-      <img 
-        src="https://cdn.shopify.com/s/files/1/0995/8709/6922/files/output-onlinegiftools.gif?v=1764765187" 
-        alt="cursor flame"
-        width="8" 
-        height="8">
-    </div> {% endcomment %}
-<script>
-  // Prevent any JS from re-applying a cursor
-  document.addEventListener("mouseover", () => {
-    document.querySelectorAll("*").forEach(el => {
-      el.style.cursor = "none";
-    });
-  });
-</script>
-    <script>
-      document.addEventListener("mousemove", function(e) {
-        const cursor = document.getElementById("flame-cursor");
-        cursor.style.left = e.clientX + "px";
-        cursor.style.top = e.clientY + "px";
-      });
-    </script>
   </body>
 </html>
